@@ -1,0 +1,14 @@
+[alias]
+	# short aliases
+	s = status -s
+	l = log --graph --oneline
+
+	# diff aliases
+	last = diff HEAD~ HEAD
+	staged = diff --staged
+
+[user]
+	# set in ~/.gitconfig.local
+
+[include]
+	path = .gitconfig.local
