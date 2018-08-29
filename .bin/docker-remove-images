@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#
+# Remove all Docker images.
+
+docker rmi $(docker images -q)
