@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#
+# Pull and stow dotfile changes.
+
+cd ~/.dotfiles
+git pull
+stow .
