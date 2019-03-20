@@ -3,6 +3,7 @@ set -x VISUAL vim
 set -x EDITOR "$VISUAL"
 
 # add ~/.bin to path
+set -x PATH /usr/local/opt/python/libexec/bin $PATH
 set -x PATH $PATH $HOME/.bin
 
 # golang
