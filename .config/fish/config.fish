@@ -9,6 +9,10 @@ set -x PATH $PATH $HOME/.bin
 # golang
 set -x GOPATH $HOME/go
 
+# use ripgrep for fzf
+set -x FZF_DEFAULT_COMMAND 'rg --files --hidden --ignore .git'
+set -x RIPGREP_CONFIG_PATH "$HOME/.rgrc"
+
 # aliases
 . $HOME/.config/fish/aliases.fish
 . $HOME/.config/fish/work/aliases.fish
