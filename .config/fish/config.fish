@@ -17,6 +17,10 @@ set -x RIPGREP_CONFIG_PATH "$HOME/.rgrc"
 . $HOME/.config/fish/aliases.fish
 . $HOME/.config/fish/work/aliases.fish
 
+# functions
+set -ax fish_function_path \
+    $HOME/.config/fish/functions/work/
+
 # greeting
 function fish_greeting
   fish_logo
