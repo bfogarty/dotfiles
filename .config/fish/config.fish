@@ -11,6 +11,7 @@ set -x GOPATH $HOME/go
 
 # aliases
 . $HOME/.config/fish/aliases.fish
+. $HOME/.config/fish/work/aliases.fish
 
 # greeting
 function fish_greeting
