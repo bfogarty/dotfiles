@@ -1,6 +1,9 @@
 # macos specific files 
 .DS_Store
 
+# project-specific .vimrc files
+.vimrc
+
 # emacs backup files 
 *~ 
 \#*\# 
