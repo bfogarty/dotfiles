@@ -105,6 +105,8 @@ augroup END
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
 
+" Custom commands
+command! PrettyJson %!python -m json.tool
 " custom definition of Rg to add --trim
 command! -bang -nargs=* Rg
             \ call fzf#vim#grep(
