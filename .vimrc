@@ -95,6 +95,7 @@ set backspace=2        " backspace across lines
 set number             " line numbers
 set noshowmode         " lightline shows the mode
 set linebreak          " wrap on newline only, for notes
+set laststatus=2       " always show a status line
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 set guioptions=        " hide scrollbars
