@@ -84,6 +84,14 @@ function! PersistStrategy(cmd)
     call term_sendkeys(g:test#vimterminal_buffer, a:cmd . "\<CR>")
 endfunction
 
+function! LightlineReload()
+    " Calling these three functions will reload lightline:
+    " https://github.com/itchyny/lightline.vim/issues/241
+    call lightline#init()
+    call lightline#colorscheme()
+    call lightline#update()
+endfunction
+
 let g:test#custom_transformations = {'docker': function('DockerTransform')}
 let g:test#custom_strategies = {'persist': function('PersistStrategy')}
 let g:test#strategy = 'persist'
@@ -115,6 +123,7 @@ autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
 
 " Custom commands
+command! LightlineReload call LightlineReload()
 command! PrettyJson %!python -m json.tool
 " custom definition of Rg to add --trim
 command! -bang -nargs=* Rg
