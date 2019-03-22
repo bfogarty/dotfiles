@@ -54,7 +54,15 @@ let macvim_skip_colorscheme = 1
 let g:nord_comment_brightness = 12
 
 let g:lightline = {
-            \ 'colorscheme': 'nord' }
+            \ 'colorscheme': 'nord',
+            \ 'active': {
+            \   'left': [ [ 'mode', 'paste' ],
+            \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+            \ },
+            \ 'component_function': {
+            \   'gitbranch': 'fugitive#head'
+            \ },
+            \ }
 
 let g:ale_fixers = {
             \   'python': ['black', 'isort'] }
