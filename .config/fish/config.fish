@@ -15,11 +15,15 @@ set -x RIPGREP_CONFIG_PATH "$HOME/.rgrc"
 
 # aliases
 . $HOME/.config/fish/aliases.fish
-. $HOME/.config/fish/work/aliases.fish
+if test -e $HOME/.config/fish/work/aliases.fish
+    . $HOME/.config/fish/work/aliases.fish
+end
 
 # functions
-set -ax fish_function_path \
-    $HOME/.config/fish/functions/work/
+if test -d $HOME/.config/fish/functions/work
+    set -a fish_function_path \
+        $HOME/.config/fish/functions/work/
+end
 
 # greeting
 function fish_greeting
