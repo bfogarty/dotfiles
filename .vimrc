@@ -28,6 +28,9 @@ call plug#end()
 
 let mapleader = ","
 
+noremap <silent> j gj
+noremap <silent> k gk
+
 nmap ; :Files<CR>
 nmap <leader>b :Buffers<CR>
 
