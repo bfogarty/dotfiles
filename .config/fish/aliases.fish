@@ -16,7 +16,7 @@ alias dc docker-compose
 alias http 'http --style=vim'
 
 # useful git WIP commands
-alias wip 'git add .;git commit -m "WIP"'
+alias wip 'git add .;git commit -m "WIP" --no-verify'
 alias unwip 'git reset --soft HEAD~1; git reset .'
 
 # keep count of how many cups of coffee I've had at work
