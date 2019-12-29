@@ -2,6 +2,10 @@
 
 A collection of my dotfiles.
 
+## Prerequisites
+
+The `fish` configuration expects `fzf` to be installed before first run.
+
 ## Installation
 
 Install `stow`. On macOS, using `brew`:
