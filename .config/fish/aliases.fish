@@ -9,6 +9,9 @@ alias stat 'stat -x'
 # mvim
 alias mvim 'pipenv run /Applications/MacVim.app/Contents/bin/mvim'
 
+# docker
+alias dc docker-compose
+
 # use vim colors for httpie
 alias http 'http --style=vim'
 
