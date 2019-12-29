@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+#
+# Utility to quickly add new Vuex mutation types.
+#
+# Example Usage:
+#   add-mutation-types ./mutation-types.js REQUESTED_ITEM{,_SUCCEEDED,_FAILED}
+
+path="$1";
+shift;
+
+for mutation in "$@"; do
+  echo "const $mutation = \"$mutation\";" >> $path
+done
