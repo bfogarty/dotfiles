@@ -2,7 +2,7 @@
 .DS_Store
 
 # project-specific .vimrc files
-.vimrc
+.lvimrc
 
 # emacs backup files 
 *~ 
