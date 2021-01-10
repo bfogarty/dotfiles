@@ -1,3 +1,7 @@
+**This repository is deprecated.** My dotfiles are now managed with [`nix`](https://github.com/bfogarty/nix).
+
+---
+
 # dotfiles
 
 A collection of my dotfiles.
